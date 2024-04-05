@@ -182,3 +182,20 @@ const soccerInfo = {
     ],
 };
 
+
+// Voorbeelden for-loop
+
+const names = ["red", "blue", "green"];
+
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+
+const words = ["huis", "landing", "kin", "paraplu"];
+
+for (let i = 0; i < words.length; i++) {
+    if (words[i].length > 5) {
+        console.log(words[i]);
+    }
+}
