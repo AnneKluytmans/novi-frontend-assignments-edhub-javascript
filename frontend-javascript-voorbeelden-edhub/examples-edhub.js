@@ -199,3 +199,91 @@ for (let i = 0; i < words.length; i++) {
         console.log(words[i]);
     }
 }
+
+
+
+
+
+
+// Voorbeeld gebruik van '' of "" binnen een string
+
+  // Optie 1 m.b.v. \
+
+const singleQuote = '"We don\'t make mistakes. We just have happy accidents." - Bob Ross'
+console.log(singleQuote);
+// output: "We don't make mistakes. We just have happy accidents." - Bob Ross
+
+const doubleQuote = "\"We don't make mistakes. We just have happy accidents.\" - Bob Ross"
+console.log(doubleQuote);
+//output: "We don't make mistakes. We just have happy accidents." - Bob Ross
+
+  // Optie 2 m.b.v. ``
+
+const accentGrave = ` "We don't make mistakes. We just have happy accidents." - Bob Ross`
+console.log(accentGrave);
+//output: "We don't make mistakes. We just have happy accidents." - Bob Ross
+
+
+
+
+// Voorbeeld gebruik van enters en tabs binnen een string
+
+   // Optie 1 m.b.v. \n en \
+
+const addressTab =
+    'Homer J. Simpson\
+    742 Evergreen Terrace\
+    Springfield'
+
+console.log(addressTab);
+//Output: Homer J. Simpson  742 Evergreen Terrace  Springfield
+
+const addressEnter =
+    'Homer J. Simpson\n' +
+    '742 Evergreen Terrace\n' +
+    'Springfield'
+
+console.log(addressEnter);
+//Output:
+// Homer J. Simpson
+// 742 Evergreen Terrace
+// Springfield
+
+   // Optie 2 m.b.v. ``
+
+const addressAccentGrave = `Homer J. Simpson
+742 Evergreen Terrace
+Springfield`
+
+console.log(addressAccentGrave);
+//Output:
+// Homer J. Simpson
+// 742 Evergreen Terrace
+// Springfield
+
+
+
+// Voorbeeld combineren van datatypes -> gebruik `` en ${methodes}
+
+const sum = (x, y) => x + y
+const x = 5
+const y = 100
+
+console.log(`The sum of ${x} and ${y} is ${sum(x, y)}.`);
+
+
+// Gebruikers input
+
+const userInput = prompt('Hoi! Hoe heet je?');
+console.log(userInput);
+
+
+// Javascript code weergeven op webpagina
+
+document.getElementById('id-van-bijbehorende-html-tag').textContent = 'wat je wil tonen';
+
+
+// Errors loggen en weergeven
+
+console.error(`Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.`);
+document.getElementById('error-message').textContent = 'Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.';
