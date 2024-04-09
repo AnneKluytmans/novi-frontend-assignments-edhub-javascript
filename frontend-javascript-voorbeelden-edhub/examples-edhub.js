@@ -183,6 +183,22 @@ const soccerInfo = {
 };
 
 
+// Voorbeeld variabele als object property key
+
+const contentWebpage = {
+    title: {
+        nl: 'Sokken webshop',
+        en: 'Sock webshop',
+    },
+    headerText: {
+        nl: 'De lekkerste warme sokken.',
+        en: 'The greatest warm socks',
+    }
+}
+
+const chosenLanguage = 'nl';
+console.log(content.title[chosenLanguage]);
+
 // Voorbeelden for-loop
 
 const names = ["red", "blue", "green"];
