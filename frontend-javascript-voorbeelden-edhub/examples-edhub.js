@@ -303,3 +303,28 @@ document.getElementById('id-van-bijbehorende-html-tag').textContent = 'wat je wi
 
 console.error(`Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.`);
 document.getElementById('error-message').textContent = 'Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.';
+
+
+
+// Voorbeeld scope variabele
+
+let price = 0;
+
+for (let i = 0; i < 10; i++) {
+    price = price + 2;
+}
+
+console.log(`U moet ${price},- betalen.`); // Dit geeft: U moet 20,- betalen.
+
+// Voorbeeld scope functie: return
+
+function calculatePrice() {
+    const price = 20;
+    return price;
+}
+
+const totalPrice = calculatePrice();
+console.log(`U moet ${totalPrice},- betalen.`); // Dit geeft: U moet 20,- betalen.
+
+
+console.log(`De afdeling Sales heeft ${departments.marketing.numberOfEmployees} medewerkers`);
